@@ -1,0 +1,6 @@
+docker run \
+  --name laborx.platform.web \
+  --restart=always --detach \
+  --network laborx-platform --ip 192.168.11.4 \
+  --mount type=bind,src=$(pwd)/setup/web/config,dst=/data/config \
+  laborx-platform-web

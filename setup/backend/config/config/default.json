@@ -1,0 +1,34 @@
+{
+  "keystone": {
+    "cookieSecret": "Pm8tuZqwkVbh4eI0AoYQRRscGbTUR2t5JmAC0OZgW8qszGx4Uzg6ML1LuBWV"
+  },
+  "storage": {
+    "files": "/app/files",
+    "url": "mongodb://platform:platform@192.168.11.2:27017/laborx-platform-backend"
+  },
+  "cloudinary": {
+    "url": "cloudinary://288179855984127:cF0Xy9KBZNNhP00PWoWcAbWB7_E@dne93b2bj"
+  },
+  "blockchain": {
+    "url": "wss://parity.tp.ntr1x.com:8546",
+    "faucet": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "self": {
+    "url": "http://192.168.11.3:3000"
+  },
+  "mail": {
+    "from": "noreply@ntr1x.com",
+    "baseURL": "http://192.168.11.4:3000",
+    "transport": {
+      "host": "smtp.mail.ru",
+      "port": 465,
+      "secure": true,
+      "debug": true,
+      "logger": true,
+      "auth": {
+        "user": "noreply@ntr1x.com",
+        "pass": "/JX23YZovmgj"
+      }
+    }
+  }
+}

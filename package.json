@@ -1,0 +1,26 @@
+{
+  "name": "@laborx/platform.starter",
+  "version": "1.0.0",
+  "main": "bin/build",
+  "license": "MIT",
+  "scripts": {
+    "docker:start:mongo":  "/bin/bash ./bin/docker-start-mongo",
+    "docker:stop:mongo":  "/bin/bash ./bin/docker-stop-mongo",
+    "docker:restart:mongo":  "yarn docker:stop:mongo; yarn docker:start:mongo",
+    "docker:build:backend": "/bin/bash ./bin/docker-build-backend",
+    "docker:stop:backend": "/bin/bash ./bin/docker-stop-backend",
+    "docker:start:backend": "/bin/bash ./bin/docker-start-backend",
+    "docker:restart:backend": "yarn docker:stop:backend; yarn docker:start:backend",
+    "docker:upgrade:backend": "yarn docker:build:backend && yarn docker:restart:backend",
+    "docker:build:web": "/bin/bash ./bin/docker-build-web",
+    "docker:stop:web": "/bin/bash ./bin/docker-stop-web",
+    "docker:start:web": "/bin/bash ./bin/docker-start-web",
+    "docker:restart:web": "yarn docker:stop:web; yarn docker:start:web",
+    "docker:upgrade:web": "yarn docker:build:web && yarn docker:restart:web",
+    "docker:build": "yarn docker:build:web; yarn docker:build:backend",
+    "docker:stop": "yarn docker:stop:web; yarn docker:stop:backend",
+    "docker:start": "yarn docker:start:web; yarn docker:start:backend",
+    "docker:restart": "yarn docker:restart:web; yarn docker:restart:backend",
+    "docker:upgrade": "yarn docker:upgrade:web; yarn docker:upgrade:backend"
+  }
+}

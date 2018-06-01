@@ -1,0 +1,6 @@
+docker run \
+  --name laborx.platform.mongo \
+  --network laborx-platform --ip 192.168.11.2 \
+  --restart=always --detach \
+  --mount type=bind,src=/var/data/laborx.platform.mongo/db,dst=/data/db \
+  mongo mongod --auth

@@ -1,0 +1,11 @@
+{
+  "frontend": {
+    "api": {
+      "url": "http://192.168.11.3:3000/api/v1"
+    },
+    "blockchain": {
+      "websocket": "wss://parity.tp.ntr1x.com:8546",
+      "rpc": "https://parity.tp.ntr1x.com:8545"
+    }
+  }
+}

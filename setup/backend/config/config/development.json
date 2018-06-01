@@ -1,0 +1,8 @@
+{
+  "self": {
+    "url": "http://192.168.11.3:3000"
+  },
+  "blockchain": {
+    "faucet": "d8e654f01b2f80f1872d1c88365efe4f0ccf093384b41c6ba6edf831cce9aa49"
+  }
+}

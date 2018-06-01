@@ -1,0 +1,11 @@
+{
+  "frontend": {
+    "api": {
+      "url": "http://backend.laborx.tp.ntr1x.com/api/v1"
+    },
+    "blockchain": {
+      "websocket": "wss://parity.tp.ntr1x.com:8546",
+      "rpc": "https://parity.tp.ntr1x.com:8545"
+    }
+  }
+}
