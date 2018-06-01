@@ -13,7 +13,7 @@ RUN echo "[Install system libraries]" \
  && echo "[/Install system libraries]"
 RUN echo "[Checkout & build the app]" \
  && cd /app \
- && git clone -b $GIT_BRANCH --single-branch https://github.com/ChronoBank/Labor-X-Backend laborx.platform.backend \
+ && git clone -b $GIT_BRANCH --single-branch https://github.com/ipavlenko/Labor-X-Backend laborx.platform.backend \
  && cd laborx.platform.backend \
  && git log -1 \
  && echo "laborx.platform.backend/package.json" \
