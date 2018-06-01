@@ -2,4 +2,6 @@ docker run \
   --name laborx.platform.backend \
   --restart=always --detach \
   --network laborx-platform --ip 192.168.11.3 \
+  --mount type=bind,src=$(pwd)/setup/backend/config,dst=/data/config \
+  --mount type=bind,src=/var/data/laborx.platform.files,dst=/data/files \
   laborx-platform-backend
